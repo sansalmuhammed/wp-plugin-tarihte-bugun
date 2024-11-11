@@ -1,0 +1,151 @@
+.tarihte-bugun {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.tarihte-bugun h3 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.tarihte-bugun ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tarihte-bugun li {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    background: #fff;
+    border: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.tarihte-bugun li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.olay-kategori {
+    margin-right: 10px;
+    font-size: 1.2em;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.olay-yil {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #666;
+    min-width: 60px;
+}
+
+.olay-icerik {
+    flex: 1;
+}
+
+/* Kategori stilleri */
+.kategori-dogum { background: #E8F5E9; }
+.kategori-olum { background: #EFEBE9; }
+.kategori-savas { background: #FFEBEE; }
+.kategori-baris { background: #E3F2FD; }
+.kategori-kesif { background: #F3E5F5; }
+.kategori-spor { background: #FFFDE7; }
+.kategori-kultur { background: #FFF3E0; }
+.kategori-siyasi { background: #E8EAF6; }
+.kategori-doga { background: #E0F2F1; }
+.kategori-genel { background: #F5F5F5; }
+
+/* Navigasyon */
+.tarih-navigasyon {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.nav-btn {
+    padding: 8px 16px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+.nav-btn.active {
+    background: #007cba;
+    color: #fff;
+    border-color: #006ba1;
+}
+
+/* Tarih seçici */
+.tarih-secici {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tarih-input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+    font-size: 14px;
+}
+
+.ui-datepicker {
+    font-size: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Kategori filtreleme */
+.kategori-filtreler {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.kategori-filtre {
+    padding: 4px 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: all 0.2s ease;
+}
+
+.kategori-filtre:hover {
+    opacity: 0.8;
+}
+
+.kategori-filtre.active {
+    box-shadow: inset 0 0 4px rgba(0,0,0,0.2);
+}
